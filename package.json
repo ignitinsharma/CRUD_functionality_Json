@@ -1,0 +1,19 @@
+{
+  "name": "crud_using_json_server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ignitinsharma/CRUD_using_JSON_server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ignitinsharma/CRUD_using_JSON_server/issues"
+  },
+  "homepage": "https://github.com/ignitinsharma/CRUD_using_JSON_server#readme"
+}
