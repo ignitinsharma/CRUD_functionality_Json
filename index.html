@@ -1,40 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1 id="showname"></h1>
     <div>
-        <h1>Add Post</h1>
-        <input type="text" id="id" placeholder="id">
-        <input type="text" id="title" placeholder="title">
-        <input type="text" id="author" placeholder="author">
-        <button onclick="addpost()">Submit</button>
+      <h1>Add Post</h1>
+      <input type="text" id="id" placeholder="id" />
+      <input type="text" id="title" placeholder="title" />
+      <input type="text" id="author" placeholder="author" />
+      <button onclick="addpost()">Submit</button>
     </div>
 
     <div>
-        <h1>Delete Post</h1>
-        <input type="text" id="delid" placeholder="Enter id to Delete">
-        <button onclick="deletepost()"> Delete</button>
+      <h1>Delete Post</h1>
+      <input type="text" id="deleteid" placeholder="Enter id to Delete" />
+      <button onclick="deletepost()">Delete</button>
     </div>
 
     <div>
-        <h1>Update Post</h1>
-        <input type="text" id="update" placeholder="Enter id to update data">
-        <input type="text" id="update_title" placeholder="Enter title to update data">
-        <button onclick="updatepost()">Update</button>
+      <h1>Update Post</h1>
+      <input type="text" id="update" placeholder="Enter id to update data" />
+      <input
+        type="text"
+        id="update_title"
+        placeholder="Enter title to update data"
+      />
+      <button onclick="updatepost()">Update</button>
     </div>
 
     <div>
-        <h1>Replace Post</h1>
-        <input type="text" id="replace_id" placeholder="Enter id to replace data">
-        <input type="text" id="replace_title" placeholder="Enter title to replace data">
-        <button onclick="replacepost()">Replace</button>
+      <h1>Replace Post</h1>
+      <input
+        type="text"
+        id="replace_id"
+        placeholder="Enter id to replace data"
+      />
+      <input
+        type="text"
+        id="replace_title"
+        placeholder="Enter title to replace data"
+      />
+      <button onclick="replacepost()">Replace</button>
     </div>
-</body>
+  </body>
 </html>
-<script src=""></script>
+<script src="./index.js"></script>

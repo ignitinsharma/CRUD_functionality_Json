@@ -1,10 +1,11 @@
-function addpost() {
+async function addpost() {
 
     //--> taking vales to the user 
     let Id = document.getElementById("id").value;
     let Title = document.getElementById("title").value;
     let Author = document.getElementById("author").value;
 
+    //--> sending data in organized way
     let send_data = {
         id: Id,
         title: Title,
@@ -13,17 +14,19 @@ function addpost() {
 
     //--> default fetch makes (GET--> get for get the data) request but 
     //--> but this time we need to send data so we need (POST request) so we need to tell
-    //--> fetch fetch(URl, { methid:POST (so we are telling fetch we want that request) })
+    //--> fetch fetch(URl, { method:POST (so we are telling fetch we want that request) })
 
-    
+
     //--> for accessing the post we are using that post server
     let res=await fetch(`http://localhost:3000/posts`,{
 
     //--> So we are telling fetch we want POST request(means send data request)
     method:'POST',
 
+    //--> sending the obj data in Body after coverting....
     body:JSON.stringify(send_data),
     
+    //--> we are talling the server is that data is on json format...
     headers:{
 
         'Content-Type':'application/json',
@@ -32,8 +35,31 @@ function addpost() {
         
     });
 
-    let data=await res.json();
-    console.log(data);
+    //--> covertinga data 
+    let main_data= await res.json();
+    console.log(main_data);
 
 }
 
+
+
+//delete method
+
+async function deletepost(){
+    let id=document.getElementById('deleteid').value;
+
+    //--> we are making things dynamic means which i wanna delete 
+    let res= await fetch(`http://localhost:3000/posts/${id}`,{
+        method:'DELETE',
+
+        //--> header passing is very important in every request
+        headers:{
+
+            'Content-Type':'application/json',
+
+        },
+    });
+
+    let data=await res.json();
+    console.log(data);
+}
