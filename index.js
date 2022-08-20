@@ -17,6 +17,7 @@ async function addpost() {
 
   //--> for accessing the post we are using that post server
   let res = await fetch(`http://localhost:3000/posts`, {
+    
     //--> So we are telling fetch we want POST request(means send data request)
     method: "POST",
 
