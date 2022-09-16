@@ -18,6 +18,9 @@
 
 ```bash
 // Install Json server
+// we can use anyone 
+
+  npm i json-server
 
  npm install -g json-server
 ```
