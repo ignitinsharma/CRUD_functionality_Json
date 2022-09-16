@@ -46,4 +46,18 @@
  json-server --watch db.json
 ```
 
+**5th**
+
+```bash
+// Types of request in CRUD
+
+ C = create(Post)
+ R = Read (GET)
+ U = Update (PUT/Patch)
+ //Put- replace the complete object
+ //PATCH- update the existing object
+ D = delete (delete)
+ 
+```
+
 
