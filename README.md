@@ -9,6 +9,9 @@
 **1st**
 ```bash
   npm init
+  
+  // also you can use this if you don't wanna hit enter
+  npm init -y
 ```
 
 **2nd**
