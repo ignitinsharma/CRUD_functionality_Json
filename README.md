@@ -17,7 +17,7 @@
 **2nd**
 
 ```bash
-// Install Json sever
+// Install Json server
 
  npm install -g json-server
 ```
