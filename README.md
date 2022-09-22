@@ -56,10 +56,10 @@
 
  C = create(Post)
  R = Read (GET)
- U = Update (PUT/Patch)
+ U = Update (PUT/PATCH)
  //Put- replace the complete object
  //PATCH- update the existing object
- D = delete (delete)
+ D = delete (DELETE)
  
 ```
 
