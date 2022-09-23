@@ -191,7 +191,5 @@ let remove = async (id) => {
 // when we do any operation on json server so we need to call that function 
 // after performaing any kind of json server request
 
-
-// display() we call display function when we need to work on dom things
-// when we need to work on data that is already fetched we basically on like
-// shorting filter
+// when we fetch data from api we need to show dom so we call display function after fetching that data 
+// into json server example sort value then we show onto dom ..
