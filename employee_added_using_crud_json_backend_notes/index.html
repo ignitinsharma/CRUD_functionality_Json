@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        text-align: center;
+      }
+      #main {
+        width: 40%;
+        height: auto;
+        border: 2px solid red;
+        margin: auto;
+        padding: 1rem 1rem;
+      }
+      Input {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        width: 90%;
+        padding: 0.3rem 0rem;
+      }
+      #container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+      }
+      button {
+        margin-bottom: 5px;
+        padding: 0.5rem 1rem;
+        background-color: bisque;
+      }
+
+      select {
+        margin-bottom: 5px;
+        padding: 0.5rem 1rem;
+        background-color: bisque;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main">
+      <h1>Crud</h1>
+      <button onclick="lth()">Low to high</button>
+      <button onclick="htl()">High to low</button>
+      <select name="" id="filter" oninput="filter()">
+        <option value="java">java</option>
+        <option value="math">math</option>
+        <option value="engllish">english</option>
+      </select>
+      <button onclick="pre()">Prevoius</button>
+      <button onclick="next()">Next</button>
+      <input type="text" id="name" placeholder="name" />
+      <input type="text" id="batch" placeholder="batch" />
+      <select name="" id="course">
+        <option value="java">java</option>
+        <option value="math">math</option>
+        <option value="engllish">english</option>
+      </select>
+      <input type="number" id="age" placeholder="age" />
+      <input type="number" id="mobile" placeholder="mobile no" />
+      <input type="number" id="score" placeholder="Evaluation Score" />
+      <button onclick="user()">ADD Employees</button>
+      <div id="container"></div>
+    </div>
+  </body>
+</html>
+<script src="./index.js"></script>
