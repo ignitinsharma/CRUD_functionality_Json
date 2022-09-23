@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>index</title>
+    <style>
+      *{
+       text-align: center;
+      }
+      #container img {
+        width: 35%;
+      }
+      #container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      #inp{
+        width: 400px;
+        margin: auto;
+        border: 2px solid black;
+        padding: 1rem 1rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+      }
+      Input {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        width: 100%;
+        padding: 0.5rem 0rem;
+        background-color: rgb(61, 59, 59);
+        color: aliceblue;
+      }
+      
+      .nav{
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+    <div><a href="./user.html">User</a></div>
+    <div><a href="./signup.html">Signup</a></div>
+    <div><a href="./login.html">Login</a></div>
+  </div>
+    <div id="inp">
+    <input type="text" id="image" placeholder="Enter Image" />
+    <input type="text" id="title" placeholder="Enter Title" />
+    <input type="text" id="description" placeholder="Enter Description" />
+    <input type="number" id="price" placeholder="Enter Price" />
+    <input type="number" id="rating" placeholder="Enter Rating" />
+    <button id="submit" onclick="submit()">Submit</button>
+  </div>
+    <div id="container"></div>
+  </body>
+</html>
+<script src="./scripts/index.js"></script>
