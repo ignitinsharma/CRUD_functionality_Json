@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel app</title>
+    <style>
+        *{
+            text-align: center;
+        }
+        #container{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            gap: 20px;
+            margin-top: 2rem;
+
+
+        }
+
+        #imagesrc{
+            width: 30%;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="ltH()">Low To High</button>
+    <button onclick="htl()">Low To High</button>
+    <br><br>
+    <button onclick="pre()">Pre</button>
+    <button onclick="next()">Next</button>
+    <br>
+    <br>
+    <button onclick="ac()">AC</button>
+    <button onclick="non()">NON_AC</button>
+    <br><br>
+    <input type="text" id="image" placeholder="Enter image address">
+    <input type="text" id="price" placeholder="Enter price">
+    <input type="text" id="rating" placeholder="Enter rating">
+    <select name="" id="category">
+        <option value="AC">AC</option>
+        <option value="NOAC">Non AC</option>
+    </select>
+    <button onclick="submit()">Submit</button>
+     <div id="container"></div>
+</body>
+</html>
+<script src="./index.js"></script>
